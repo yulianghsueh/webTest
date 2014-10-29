@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="1500" height="400" version="1.1"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<clipPath id="a1">
+    <polygon id="a1Shape" points="100,10 40,180 190,60 10,60 160,180 100,10" stroke="blue" />        
+</clipPath>
+
+<clipPath id="a2">
+    <circle id="a2Shape" cx="100" cy="100" r="65" />
+</clipPath>
+
+<clipPath id="b1" clip-path="url(#a1)">
+    <use x="0" y="0" width="200" height="200" xlink:href="#a2Shape" />
+</clipPath>
+
+<clipPath id="b2">
+    <use x="0" y="0" width="200" height="200" xlink:href="#a1Shape" />
+    <use x="0" y="0" width="200" height="200" xlink:href="#a2Shape" />
+</clipPath>
+
+<rect x="10" y="10" width="180" height="180" fill="#c00" 
+    clip-path="url(#a1)" />
+<rect x="10" y="10" width="180" height="180" fill="#0a0" 
+    clip-path="url(#a2)" transform="translate(200)"/>
+<rect x="10" y="10" width="180" height="180" fill="#09c" 
+    clip-path="url(#b1)" transform="translate(400)" />
+<rect x="10" y="10" width="180" height="180" fill="#f90" 
+    clip-path="url(#b2)" transform="translate(600)" />
+</svg>
+

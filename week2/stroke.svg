@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg>
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+
+  <g fill="none" stroke="black" stroke-width="15">
+	<line stroke-linecap="butt"
+          x1="30" y1="30" x2="30" y2="90"/>
+
+    <line stroke-linecap="round"
+          x1="60" y1="30" x2="60" y2="90"/>
+
+    <line stroke-linecap="square"
+          x1="90" y1="30" x2="90" y2="90"/>
+
+  </g>
+  <path d="M30 30 30 90 M60 30 60 90 M90 30 90 90"
+          stroke="white" />
+</svg>
