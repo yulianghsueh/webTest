@@ -1,111 +1,20 @@
-<!DOCTYPE html>  
-<html ng-app="memo">
-  <head>  
-    <meta charset="utf-8">    
-    <title>SVG-week1</title>  
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="issue.js"></script>
-  </head>  
-  <body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Webtest by yulianghsueh</title>
 
-    <section class="col-md-2">
-      <h3>&lt;stroke&gt;</h3>
-      <embed src="stroke.svg" type="image/svg+xml"/>
-    </section>
-    <section class="col-md-3">
-      <h3>&lt;stroke&gt;</h3>
-      <embed src="stroke2.svg" type="image/svg+xml"/>
-    </section>   
-    <section class="col-md-3">
-      <h3>&lt;stroke&gt;</h3>
-      <embed src="stroke3.svg" type="image/svg+xml"/>
-    </section>
-    <section class="col-md-4">
-      <h3>&lt;linearGradient&gt;</h3>
-      <embed src="fill1.svg" type="image/svg+xml"/>
-    </section>
-    <section class="col-md-4">
-      <h3>&lt;radialGradient&gt;</h3>
-      <embed src="fill2.svg" type="image/svg+xml"/>
-    </section>
-    <section class="col-md-3">
-      <h3>&lt;use&gt;</h3>
-      <embed src="use.svg" type="image/svg+xml"/>
-    </section>
-    <section class="col-md-5">
-      <h3>&lt;clipping&gt;</h3>
-      <embed src="clip.svg" type="image/svg+xml"/>
-    </section>
-    <section class="col-md-8">
-      <h3>twice clipping</h3>
-      <embed src="clip2.svg" type="image/svg+xml"/>
-    </section>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <img src="https://rawgit.com/Intrising/intern-sandbox/master/svg/Week2/use.svg">
+  <a href="https://rawgit.com/yulianghsueh/webTest/gh-pages/week2/index.html">week2</a>
 
-    <section class="col-md-4">
-      <h3>Resize and Move</h3>
-
-      <svg width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <circle id="circle_resize" cx="150" cy="150" r="40" fill="red" stroke="black" 
-        stroke-width="2"/>
-      </svg><br>
-      <button type="button" class="btn btn-default" id="origin">還原</button>
-      <button type="button" class="btn btn-default" id="bigger">放大</button>
-      <button type="button" class="btn btn-default" id="smaller">縮小</button>
-      <button type="button" class="btn btn-default" id="left">左</button>
-      <button type="button" class="btn btn-default" id="right">右</button>
-      <button type="button" class="btn btn-default" id="up">上</button>
-      <button type="button" class="btn btn-default" id="down">下</button>
-    </section>
-
-    <section class="col-md-4">
-      <h3>Change color</h3>
-
-      <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <rect id="change_rect" x="33" y="34" fill="pink" stroke="black" stroke-width="10"width="75" height="75"/>
-      </svg><br>
-      <input type="color" id="color_border" value="white">
-      <button type="button" class="btn btn-default" id="change_border">Change Border Color</button>
-      <br><br>
-      <input type="color" id="color_fill" value="white">
-      <button type="button" class="btn btn-default" id="change_fill">Change Color</button>
-    </section>
-
-    <section class="col-md-3">
-      <h3>Change text content</h3>
-
-      <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <text id="change_content" x="10" y="50" fill="red" style="font-size:24px;">Hello</text>
-      </svg>
-      <input type="text" class="form-control" value="" />
-      <br>
-      <button type="button" class="btn btn-default" id="change_text">Change text</button>
-    </section>
-
-    <section class="col-md-3">
-      <h3>Change text path</h3>
-
-      <svg width="300" height="200" version="1.1" 
-      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-
-        <defs>
-        <path id="change_shape" d="M0 50 200 50" stroke="#000" fill="none"/>
-        </defs>
-        <text>
-           <textPath xlink:href="#change_shape" >HelloHelloHelloHelloHello</textPath>
-        </text>
-
-      </svg>
-      <button type="button" class="btn btn-default" id="change_shape1">Change1</button>
-      <button type="button" class="btn btn-default" id="change_shape2">Change2</button>
-      <button type="button" class="btn btn-default" id="change_shape3">Change3</button>
-      <button type="button" class="btn btn-default" id="change_shape4">Change4</button>
-      <button type="button" class="btn btn-default" id="change_shape5">Change5</button>
-      <button type="button" class="btn btn-default" id="change_shape6">Change6</button>
-
-    </section>
-  </body>  
-
-</html>  
+    
+  </body>
+</html>
